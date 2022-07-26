@@ -2,17 +2,61 @@
 
 * {
   font-family: "Roboto";
+  color: #6B708D;
+}
+
+body {
+    margin: auto;
+    margin-top: 70px;
+    
+    width: 80%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+nav ul {
+    width: 30%;
+}
+
 ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
 }
+
 
 li a {
     text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #292E47;
+}
+
+#man-image {
+    height: 637px;
+}
+
+#card-image {
+    position:absolute;
+    height: 400px;
+}
+
+#project-accepted {
+    position:absolute;
+    height: 350px;
+}
+
+#recent article {
+    width: 340px;
+}
+
+#recent article img {
+    width: 100%;
 }
