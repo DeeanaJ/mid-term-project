@@ -6,7 +6,7 @@
   </head>
 
   <body>
-    <nav>
+    <nav class="nav">
       <img src="/project-assets/logos/circle.svg" id="main-logo" alt="main logo" />
       <ul>
         <li><a href="/index.html">Home</a></li>
@@ -17,15 +17,15 @@
     </nav>
 
     <header>
-      <div>
+      <div id="hero-text">
         <h1>Empower Your Business With Stunning Design!</h1>
         <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-        <div>
-          <button class="" type="button">Get in touch</button>
-          <button class="" type="button">See our work</button>
+        <div id="cta">
+          <button class="btn" type="button">Get in touch</button>
+          <button class="btn-blind" type="button">See our work</button>
         </div>
       </div>
-      <div>
+      <div id="img-hero">
         <img src="/project-assets/hero-section/hero-image.png" alt="man smiling" id="man-image"/>
         <img src="/project-assets/hero-section/card-1.png" alt="choose your card" id="card-image"/>
         <img src="/project-assets/hero-section/card-2.png" alt="Project has been accepted" id="project-accepted"/>
@@ -41,7 +41,7 @@
     </section>
 
     <section id="recent">
-      <h1>Recent Projects</h1>
+      <h2>Recent Projects</h2>
       <article>
         <img src="/project-assets/projects-section/1.jpg" alt="Ilustration" class="" />
         <h4>Simplify</h4>
@@ -63,7 +63,7 @@
     </section>
 
     <section id="hear">
-      <h2>Hear What Our Clients Have to Say</h1>
+      <h2>Hear What Our Clients Have to Say</h2>
       <q>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</q>
       <img src="/project-assets/testimonial-section/memoji-1.png" alt="blond girl"/>
       <img src="/project-assets/testimonial-section/memoji-2.png" alt="boy"/>
@@ -77,39 +77,62 @@
     </section>
 
     <section id="our-services">
-      <h3>Our Services</h3>
+      <h2>Our Services</h2>
       <article>
-        <img src="/project-assets/services-section/icons/1.svg" alt="pen icon" class="" />
+        <div class="img-services">
+          <img src="/project-assets/services-section/icons/1.svg" alt="pen icon" class="" />
+        </div>
         <p>User Interface Design</p>
         <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
         <a href="/project.html" class=" ">Learn more</a>
       </article>
       <article>
-        <img src="/project-assets/services-section/icons/2.svg" alt="click icon" class="" />
+        <div class="img-services">
+          <img src="/project-assets/services-section/icons/2.svg" alt="click icon" class="" />
+        </div>
         <p>User Experience Design</p>
         <p>Circle always focuses on delivering the best user experience to your customers.</p>
         <a href="/project.html" class="">Learn more</a>
       </article>
       <article>
-        <img src="/project-assets/services-section/icons/3.svg" alt="code icon" class="" />
+        <div class="img-services">
+          <img src="/project-assets/services-section/icons/3.svg" alt="code icon" class="" />
+        </div>
         <p>Application Development</p>
         <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
         <a href="" class="">Learn more</a>
       </article>
     </section>
 
-    <section>
+    <section id="newsletter">
       <h2>Do you have any questions?</h2>
       <p>Let us help you!</p>
       <form>
         <img src="/project-assets/newsletter/icon/mail.svg" alt="mail icon" class="" />
-        <input />
-        <button>Subscribe</button>
+        <input type="email" name="email" placeholder="Enter your email"/>
+        <button class="btn" type="submit">Subscribe</button>
       </form>
     </section>
 
     <footer>
-
+      <div>
+        <img src="/project-assets/logos/circle.svg" id="footer-logo" alt="Circle logo"/>
+        <address>2972 Westheimer Rd. Santa Ana, Illinois 85486 </address>
+      </div>
+      <div id="footer-navi">
+        <div>
+          <a href="#">Team</a>
+          <a href="#">Press</a>
+        </div>
+        <div>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+        <div>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
     </footer>
     <script src="index.js"></script>
   </body>
