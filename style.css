@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 * {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #6B708D;
 }
 
 body {
-    margin: auto;
-    margin-top: 70px;
+    margin: 70px 10% 0 10%;
     background-color: #f2f4fc;
     width: 80%;
 }
 
 a {
     text-decoration: none;
+    cursor:pointer;
 }
 
 .nav {
@@ -39,7 +39,9 @@ ul {
     color: white;
     background-color: #072AC8;
     border: none;
+    cursor: pointer;
 }
+
 .btn:hover {
     background-color: #0927ab;
 }
@@ -98,6 +100,18 @@ h1 {
     left: 60%;
     top: 65%;
     height: 350px;
+}
+
+.logos {
+    padding: 20px 0;
+}
+
+#companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 120px;
+    margin-bottom: 190px;
 }
 
 #recent article {
@@ -176,4 +190,16 @@ address {
         padding: 12px 8px;
         font-size: 0.8em;
     }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    header {
+        padding-top: 80px;
+        justify-content: center;
+        align-content: middle;
+        flex-direction: column;
+    }
+
 }
