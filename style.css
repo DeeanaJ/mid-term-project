@@ -14,13 +14,14 @@ body {
 a {
     text-decoration: none;
     cursor:pointer;
+    font-weight: 500;
+    color: #072AC8;
 }
 
 a:hover {
-    color: #292E47;
+    color: #0927ab;
 
 }
-
 
 .nav {
     display: flex;
@@ -30,6 +31,10 @@ a:hover {
 
 .nav ul {
     width: 30%;
+}
+
+nav a {
+    color:#6B708D;
 }
 
 ul {
@@ -180,6 +185,7 @@ h2 {
 
 #recent p {
     margin-bottom: 50px;
+    height: 1em;
 }
 
 article div {
@@ -197,13 +203,14 @@ h4 {
 
 .img-services {
     background-color: #ECF7FF;
-    width: 80px;
+    width: 40px;
     border-radius: 100px;
+    margin-bottom: 55px;
 }
 
 article {
     width: 32%;
-    height: 444px;
+    height: 470px;
     background: #FFFFFF;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
 }
@@ -228,38 +235,51 @@ article {
     width: 48px;
     height: 48px;
     border-radius: 100px;
-    background-size:contain;
+    background-size:cover;
 }
 
 #blonde {
     left:-5%;
-    top: -10%;
+    top: -5%;
 
 }
 
 #boy {
     right: -5%;
-    top: -10%;
+    top: -5%;
 
 }
 
 #ok-boy {
     left: -5%;
-    bottom: -10%;
+    bottom: -5%;
 }
 
 #party-girl {
     right: -5%;
-    bottom: -10%;
+    bottom: -5%;
 }
 
 #profile-text p {
     margin: 0;
+    margin-left: 10px;
     text-align: left;
+}
+
+#profile-text p:nth-child(1) {
+    color: #A2D6F9;
+    font-size: 1.0625em;
+    margin-bottom: 5px;
+}
+
+#profile-text p:nth-child(2) {
+    color: #F4F6FC;
+    font-size:0.8em;
 }
 
 #hear > div {
     display: flex;
+    justify-content: center;
 }
 
 
@@ -267,18 +287,55 @@ article {
     color: #f4f6fc;
 }
 
-q {
+blockquote {
     color: #ffc600;
     font-weight: 500;
     font-size: 1.5em;
     line-height: 160%;
+    width:60%;
+    margin: 105px auto;
 }
+
+#our-services article {
+    padding: 40px 30px 30px 30px;
+    width: 25%;
+    height: 100%;
+}
+
+#our-services a {
+    font-weight: 500;
+    margin-top: 36px;
+}
+
 
 #newsletter {
     background-color: #ffc600;
     margin: 0 -5% 80px -5%;
     text-align: center;
     padding: 136px 110px;
+}
+
+#newsletter p {
+    color: #292E47;
+}
+
+form div {
+    padding: 25px 30px;
+    background-color: #fff;
+    display:flex;
+    margin-right: 20px;
+}
+
+input {
+    width: 300px;
+    margin-left: 10px;
+    border:none;
+    font-size: 1.0625em;
+}
+
+form {
+    display:flex;
+    justify-content: center;
 }
 
 #footer-.navi {
@@ -305,6 +362,15 @@ address {
 }
 
 @media (max-width: 1024px) {
+
+    #hero p {
+        width: 20%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
     #img-hero {
         flex-grow: 1;
         transform: scale(0.8);
@@ -315,13 +381,13 @@ address {
         flex-direction: column;
     }
 
-    #recent article {
+    #recent article, #our-services article {
         width: 100%;
         margin-bottom: 30px;
     }
 
-    #recent h2 {
-        top: -5%;
+    #recent h2, #our-services h2 {
+        top: -10%;
     }
 
     .logos {
@@ -355,6 +421,27 @@ address {
     #companies {
         flex-wrap: wrap;
     }
+
+    blockquote {
+        width: 100%;
+   }
+
+   .hear-img {
+        transform:scale(0.45);
+   }
+
+   form {
+        flex-direction: column;
+   }
+
+   #newsletter {
+        padding-left: 50px;
+        padding-right: 50px;
+   } 
+   
+   form button {
+        margin-top: 20px;
+   }
 
    
 
