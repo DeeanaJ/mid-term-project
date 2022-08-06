@@ -1,19 +1,66 @@
-<!DOCTYPE >
+<!DOCTYPE>
 <html>
-  <head>
-    <title>Contact Diana</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <img src="/project-assets/logos/circle.svg" id="main-logo" alt="main logo" />
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="#recent">Projects</a></li>
-        <li><a href="#our-services">Services</a></li>
-      </ul>
-      <a href="/contact.html"> <button class="btn">Contact Us</button> </a>
-    </nav>
-    <script src="index.js"></script>
-  </body>
+
+<head>
+  <title>Contact Diana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="nav">
+    <img src="/project-assets/logos/circle.svg" id="main-logo" alt="main logo" />
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#recent">Projects</a></li>
+      <li><a href="#our-services">Services</a></li>
+    </ul>
+    <a href="/contact.html"> <button class="btn">Contact Us</button> </a>
+  </nav>
+  <section id="contact">
+    <h1>Contact Us</h1>
+    <form>
+      <div>
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+      </div>
+      <div class="form-inline">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+        </div>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Write your message here..." rows="10"></textarea>
+      </div>
+      <button type="submit" class="btn" id="btn-contact">Submit</button>
+    </form>
+  </section>
+  <footer>
+    <div>
+      <img src="/project-assets/logos/circle.svg" id="footer-logo" alt="Circle logo" />
+      <address>2972 Westheimer Rd. Santa Ana, Illinois 85486</address>
+    </div>
+    <div id="footer-navi">
+      <div>
+        <a href="#">Team</a>
+        <a href="#">Press</a>
+      </div>
+      <div>
+        <a href="#our-services">Services</a>
+        <a href="#recent">Projects</a>
+      </div>
+      <div>
+        <a href="#">About Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
 </html>
