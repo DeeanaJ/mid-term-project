@@ -8,7 +8,7 @@
 
 <body>
   <nav class="nav">
-    <img src="/project-assets/logos/circle.svg" id="main-logo" alt="main logo" />
+    <img src="/project-assets/logos/circle.svg" id="main-logo" alt="main logo" onclick="home()" />
     <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="#recent">Projects</a></li>
@@ -24,11 +24,11 @@
         <input type="text" id="name" name="name" placeholder="Enter your full name" required />
       </div>
       <div class="form-inline">
-        <div>
+        <div id="contact-email">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Enter your email address" />
         </div>
-        <div>
+        <div id="contact-phone">
           <label for="phone">Phone</label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
         </div>
