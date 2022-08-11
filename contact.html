@@ -4,6 +4,7 @@
 <head>
   <title>Contact Diana</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -25,20 +26,22 @@
       </div>
       <div class="form-inline">
         <div id="contact-email">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email address" />
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required />
         </div>
         <div id="contact-phone">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
         </div>
       </div>
       <div>
-        <label for="message">Message</label>
-        <textarea name="message" id="message" placeholder="Write your message here..." rows="10"></textarea>
+        <label for="message">Message *</label>
+        <textarea name="message" id="message" placeholder="Write your message here..." rows="10" required></textarea>
       </div>
       <button type="submit" class="btn" id="btn-contact">Submit</button>
+
     </form>
+    
   </section>
   <footer>
     <div>
