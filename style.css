@@ -22,8 +22,9 @@ a:hover {
   color: #0927ab;
 }
 
+/* when hovering Circle, cursor is a circle */
 #main-logo {
-  cursor: wait;
+  cursor: cell;
 }
 
 .nav {
@@ -89,7 +90,7 @@ h1 {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 340px;
 }
 
 .btn-blind {
@@ -485,6 +486,7 @@ textarea,
   margin-bottom: 50px;
 
 }
+
 
 @media (max-width: 1024px) {
   #hero p {
